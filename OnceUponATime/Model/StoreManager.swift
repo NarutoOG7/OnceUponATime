@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class StoreManager {
+    
+    static let instance = StoreManager()
+    
+    var locationStore = LocationStore()
+    
+}

@@ -13,6 +13,14 @@
 		C93D3D90278ABBC700DB0F57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93D3D8F278ABBC700DB0F57 /* Preview Assets.xcassets */; };
 		C93D3D9B278ABBC800DB0F57 /* OnceUponATimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D3D9A278ABBC800DB0F57 /* OnceUponATimeTests.swift */; };
 		C93D3DA6278ABBC800DB0F57 /* OnceUponATimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D3DA5278ABBC800DB0F57 /* OnceUponATimeUITests.swift */; };
+		C93D3DBC278ADF2C00DB0F57 /* ExplorePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D3DBB278ADF2C00DB0F57 /* ExplorePage.swift */; };
+		C93D3DC4278ADF4500DB0F57 /* TripPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D3DC3278ADF4500DB0F57 /* TripPage.swift */; };
+		C93D3DC9278AE8C600DB0F57 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D3DC8278AE8C600DB0F57 /* SearchBar.swift */; };
+		C93D3DCE278AE8E600DB0F57 /* IconImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D3DCD278AE8E600DB0F57 /* IconImage.swift */; };
+		C93D3DD3278AE98400DB0F57 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D3DD2278AE98400DB0F57 /* Location.swift */; };
+		C93D3DD8278AEA6200DB0F57 /* LocationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D3DD7278AEA6200DB0F57 /* LocationStore.swift */; };
+		C93D3DE3278B5EC700DB0F57 /* Sourcess in Resources */ = {isa = PBXBuildFile; fileRef = C93D3DE2278B5EC700DB0F57 /* Sourcess */; };
+		C9D91F0B278BD31D006C14ED /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D91F0A278BD31D006C14ED /* StoreManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,14 @@
 		C93D3DA1278ABBC800DB0F57 /* OnceUponATimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnceUponATimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93D3DA5278ABBC800DB0F57 /* OnceUponATimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnceUponATimeUITests.swift; sourceTree = "<group>"; };
 		C93D3DA7278ABBC800DB0F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C93D3DBB278ADF2C00DB0F57 /* ExplorePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePage.swift; sourceTree = "<group>"; };
+		C93D3DC3278ADF4500DB0F57 /* TripPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPage.swift; sourceTree = "<group>"; };
+		C93D3DC8278AE8C600DB0F57 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		C93D3DCD278AE8E600DB0F57 /* IconImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImage.swift; sourceTree = "<group>"; };
+		C93D3DD2278AE98400DB0F57 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		C93D3DD7278AEA6200DB0F57 /* LocationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStore.swift; sourceTree = "<group>"; };
+		C93D3DE2278B5EC700DB0F57 /* Sourcess */ = {isa = PBXFileReference; lastKnownFileType = text; path = Sourcess; sourceTree = "<group>"; };
+		C9D91F0A278BD31D006C14ED /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +91,7 @@
 		C93D3D7C278ABBB500DB0F57 = {
 			isa = PBXGroup;
 			children = (
+				C93D3DE2278B5EC700DB0F57 /* Sourcess */,
 				C93D3D87278ABBB600DB0F57 /* OnceUponATime */,
 				C93D3D99278ABBC700DB0F57 /* OnceUponATimeTests */,
 				C93D3DA4278ABBC800DB0F57 /* OnceUponATimeUITests */,
@@ -95,6 +112,9 @@
 		C93D3D87278ABBB600DB0F57 /* OnceUponATime */ = {
 			isa = PBXGroup;
 			children = (
+				C93D3DB8278ADE2C00DB0F57 /* Model */,
+				C93D3DB7278ADE2600DB0F57 /* View */,
+				C93D3DB6278ADE1300DB0F57 /* ViewModel */,
 				C93D3D88278ABBB600DB0F57 /* OnceUponATimeApp.swift */,
 				C93D3D8A278ABBB600DB0F57 /* ContentView.swift */,
 				C93D3D8C278ABBC700DB0F57 /* Assets.xcassets */,
@@ -128,6 +148,50 @@
 				C93D3DA7278ABBC800DB0F57 /* Info.plist */,
 			);
 			path = OnceUponATimeUITests;
+			sourceTree = "<group>";
+		};
+		C93D3DB6278ADE1300DB0F57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C93D3DB7278ADE2600DB0F57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C93D3DB9278ADF0700DB0F57 /* Screens */,
+				C93D3DBA278ADF0F00DB0F57 /* SubViews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C93D3DB8278ADE2C00DB0F57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C93D3DD2278AE98400DB0F57 /* Location.swift */,
+				C93D3DD7278AEA6200DB0F57 /* LocationStore.swift */,
+				C9D91F0A278BD31D006C14ED /* StoreManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C93D3DB9278ADF0700DB0F57 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C93D3DBB278ADF2C00DB0F57 /* ExplorePage.swift */,
+				C93D3DC3278ADF4500DB0F57 /* TripPage.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C93D3DBA278ADF0F00DB0F57 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				C93D3DC8278AE8C600DB0F57 /* SearchBar.swift */,
+				C93D3DCD278AE8E600DB0F57 /* IconImage.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +299,7 @@
 			files = (
 				C93D3D90278ABBC700DB0F57 /* Preview Assets.xcassets in Resources */,
 				C93D3D8D278ABBC700DB0F57 /* Assets.xcassets in Resources */,
+				C93D3DE3278B5EC700DB0F57 /* Sourcess in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +324,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93D3DD8278AEA6200DB0F57 /* LocationStore.swift in Sources */,
+				C93D3DCE278AE8E600DB0F57 /* IconImage.swift in Sources */,
 				C93D3D8B278ABBB600DB0F57 /* ContentView.swift in Sources */,
+				C93D3DC4278ADF4500DB0F57 /* TripPage.swift in Sources */,
+				C93D3DC9278AE8C600DB0F57 /* SearchBar.swift in Sources */,
 				C93D3D89278ABBB600DB0F57 /* OnceUponATimeApp.swift in Sources */,
+				C9D91F0B278BD31D006C14ED /* StoreManager.swift in Sources */,
+				C93D3DBC278ADF2C00DB0F57 /* ExplorePage.swift in Sources */,
+				C93D3DD3278AE98400DB0F57 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,10 +401,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -390,10 +464,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -421,12 +497,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"OnceUponATime/Preview Content\"";
 				DEVELOPMENT_TEAM = 2DXG6S775F;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = OnceUponATime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Belton.OnceUponATime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -443,6 +521,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"OnceUponATime/Preview Content\"";
 				DEVELOPMENT_TEAM = 2DXG6S775F;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = OnceUponATime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (

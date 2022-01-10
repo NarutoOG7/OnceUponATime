@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection = 0
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView(selection: $selection) {
+            ExplorePage()
+                .tabItem {
+                    Text("Explore")
+                }
+                .tag(0)
+        }
     }
 }
 
