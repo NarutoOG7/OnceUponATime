@@ -12,5 +12,6 @@ class StoreManager {
     static let instance = StoreManager()
     
     var locationStore = LocationStore()
+    var userStore = UserStore()
     
 }
