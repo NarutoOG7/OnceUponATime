@@ -1,0 +1,6 @@
+framework module Pods_OnceUponATimeTests {
+  umbrella header "Pods-OnceUponATimeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

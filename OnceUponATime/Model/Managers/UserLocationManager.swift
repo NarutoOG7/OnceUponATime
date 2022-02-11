@@ -9,22 +9,15 @@ import MapKit
 import CoreLocation
 import Combine
 
-class LocationManager: NSObject, ObservableObject {
-    static let instance = LocationManager()
+class UserLocationManager: NSObject, ObservableObject {
+    static let instance = UserLocationManager()
     
-    @Published var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 40.585, longitude: -105.084), span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10))
-    
+    @Published var region = MKCoordinateRegion()
+    @Published var radius = 50
     private let clLocationManager = CLLocationManager()
     @Published var currentLocation: CLLocation?
     @State private var cancellable: AnyCancellable?
-    var selectedLocation: Location? {
-        willSet {
-            getDistanceToLocation(location: newValue ?? Location()) { distance in
-                self.distance = distance
-            }
-        }
-    }
-    @Published var distance = 0.0
+    //    @Published var distance = 0.0
     @Published var displayedLocationRoute: MKRoute!
     
     override init() {
@@ -33,8 +26,8 @@ class LocationManager: NSObject, ObservableObject {
         clLocationManager.delegate = self
         clLocationManager.desiredAccuracy = kCLLocationAccuracyBest
         clLocationManager.distanceFilter = kCLDistanceFilterNone
-        clLocationManager.startUpdatingLocation()
         clLocationManager.requestWhenInUseAuthorization()
+        clLocationManager.startUpdatingLocation()
         
     }
     
@@ -44,7 +37,7 @@ class LocationManager: NSObject, ObservableObject {
     
     func setCurrentLocation() {
         cancellable = $currentLocation.sink { location in
-            self.mapRegion = MKCoordinateRegion(center: location?.coordinate ?? CLLocationCoordinate2D(), latitudinalMeters: 2, longitudinalMeters: 2)
+            self.region = MKCoordinateRegion(center: location?.coordinate ?? CLLocationCoordinate2D(), latitudinalMeters: 2, longitudinalMeters: 2)
         }
     }
     
@@ -55,7 +48,7 @@ class LocationManager: NSObject, ObservableObject {
             
             request.source = MKMapItem(placemark: MKPlacemark(coordinate: currentLocation.coordinate))
             
-            getCoordinatesFrom(location: location) { coordinates in
+            getCoordinatesFrom(addressString: location.address.fullAddress()) { coordinates in
                 destCoordinates = coordinates
                 
                 request.destination = MKMapItem(placemark: MKPlacemark(coordinate: destCoordinates))
@@ -75,22 +68,37 @@ class LocationManager: NSObject, ObservableObject {
         }
     }
     
-    func getCoordinatesFrom(location: Location, withCompletion completion: @escaping ((_ coordinates: CLLocationCoordinate2D) -> (Void))) {
+    func getCoordinatesFrom(addressString: String, withCompletion completion: @escaping ((_ coordinates: CLLocationCoordinate2D) -> (Void))) {
         let geoCoder = CLGeocoder()
-        geoCoder.geocodeAddressString(location.address.fullAddress()) { (placemarks, error) in
+        geoCoder.geocodeAddressString(addressString) { (placemarks, error) in
             guard
                 let placemarks = placemarks,
                 let loc = placemarks.first?.location
             else {
                 // handle no location found
-                print("error on forward geocoding.. get coordinates from location.. \(location.name)")
+                print("error on forward geocoding.. get coordinates from location.. \(addressString)")
                 return
             }
             completion(loc.coordinate)
         }
     }
     
-    func getAddressFrom(coordinates: CLLocationCoordinate2D, withCompletion completion: @escaping ((_ location: Location.Address) -> (Void))) {
+    //    func getCoordinatesFrom(location: Location, withCompletion completion: @escaping ((_ coordinates: CLLocationCoordinate2D) -> (Void))) {
+    //        let geoCoder = CLGeocoder()
+    //        geoCoder.geocodeAddressString(location.address.fullAddress()) { (placemarks, error) in
+    //            guard
+    //                let placemarks = placemarks,
+    //                let loc = placemarks.first?.location
+    //            else {
+    //                // handle no location found
+    //                print("error on forward geocoding.. get coordinates from location.. \(location.name)")
+    //                return
+    //            }
+    //            completion(loc.coordinate)
+    //        }
+    //    }
+    
+    func getAddressFrom(coordinates: CLLocationCoordinate2D, withCompletion completion: @escaping ((_ location: Address) -> (Void))) {
         let location  = CLLocation(latitude: coordinates.latitude, longitude: coordinates.longitude)
         let geoCoder = CLGeocoder()
         geoCoder.reverseGeocodeLocation(location) { (placemarks, error) in
@@ -108,7 +116,7 @@ class LocationManager: NSObject, ObservableObject {
                let zip = location.postalCode,
                let country = location.country {
                 
-                let address = Location.Address(
+                let address = Address(
                     address: "\(buildingNumber) \(street)",
                     city: city,
                     state: state,
@@ -120,15 +128,30 @@ class LocationManager: NSObject, ObservableObject {
     }
 }
 
-extension LocationManager: CLLocationManagerDelegate {
+//MARK: - Get map region radius
+
+extension MKCoordinateRegion {
+    func distanceMax() -> CLLocationDistance {
+        let furthest = CLLocation(latitude: center.latitude + (span.latitudeDelta/2),
+                                  longitude: center.longitude + (span.longitudeDelta/2))
+        let centerLoc = CLLocation(latitude: center.latitude, longitude: center.longitude)
+        return centerLoc.distance(from: furthest)
+    }
+}
+
+
+
+//MARK: - LocationManagerDelegate
+
+extension UserLocationManager: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        guard let location = locations.last else { return }
-        
-        //        DispatchQueue.main.async {
-        self.currentLocation = location
-        //        }
+        locations.last.map {
+            region = MKCoordinateRegion(
+                center: CLLocationCoordinate2D(latitude: $0.coordinate.latitude, longitude: $0.coordinate.longitude),
+                span: MKCoordinateSpan(latitudeDelta: 2, longitudeDelta: 2))
+        }
     }
     
     

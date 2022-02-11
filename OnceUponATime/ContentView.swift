@@ -8,15 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selection = 0
+
+    @ObservedObject var firebaseManager = FirebaseManager.instance
     var body: some View {
-        TabView(selection: $selection) {
-            ExploreByList()
-                .tabItem {
-                    Text("Explore")
-                }
-                .tag(0)
-        }
+        Login()
     }
 }
 

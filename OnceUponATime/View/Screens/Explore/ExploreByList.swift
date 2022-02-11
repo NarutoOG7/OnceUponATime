@@ -52,7 +52,7 @@ struct ExploreCollectionSet: View {
 
 struct ExploreByList: View {
     @ObservedObject var explorePageVM = ExploreByListVM.instance
-    @ObservedObject var locationManager = LocationManager.instance
+//    @ObservedObject var locationManager = UserLocationManager.instance
     var body: some View {
         if explorePageVM.isShowingMap {
             VStack {
@@ -62,7 +62,6 @@ struct ExploreByList: View {
         } else {
             NavigationView {
                 VStack(alignment: .leading) {
-                    
                     Text("Good Evening, Spencer")
                         .font(.largeTitle)
                         .fontWeight(.bold)
@@ -87,19 +86,22 @@ struct ExploreByList: View {
                     Divider()
                         .frame(height: 1.5)
                         .background(Color.black)
+                    VStack {
                     
                     ExploreCollectionSet()
                         .offset(x: -15, y: 15)
+                    }
+                    Spacer()
                 }
                 .padding()
-                .padding(.top, -70)
+//                .offset(y: -120)
             }
         }
     }
     
     func isShowingMap() {
         explorePageVM.isShowingMap = true
-
+        print("isShowingMap")
     }
 }
 

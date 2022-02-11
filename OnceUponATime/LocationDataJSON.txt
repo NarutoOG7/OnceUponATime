@@ -1,0 +1,80 @@
+
+
+[
+
+
+{
+    "id": 0,
+    "name": "Fort Condé Inn",
+    "address": {
+        "street": "165 St Emanuel St",
+        "city": "Mobile",
+        "state": "AL",
+        "country": "USA",
+        "zipCode": "36602"
+    },
+    "description": "Being built in 1836, it holds the title of second-oldest house in Mobile. Now a hotel, the Fort Condé Inn is one of the most haunted hotels in the state. Staying the night in this famous Alabama hotel might come with an overwhelming feeling of dread as some claim to have heard disembodied voices and clawing sounds on the floor.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/mobile-g3bea79042_640.jpg"
+    ],
+    "lastReview": {
+        "review": "Has that 1800's vibe, ya know?",
+        "rating": "4",
+        "user": "Sarah"
+    },
+    "locationType": [
+        "Haunted Hotel",
+        "Historical Landmark"
+    ],
+    "moreInfoLink": "www.fortcondeinn.com"
+},
+
+{
+    "id": 1,
+    "name": "Redmont Hotel",
+    "address": {
+        "street": "2101 5th Ave N",
+        "city": "Brimingham",
+        "state": "AL",
+        "country": "USA",
+        "zipCode": "35203"
+    },
+    "description": "In a time where private baths for every hotel was unusual, the new Redmont Hotel was ahead of its time. Being built in 1925, this hotel holds many secrets.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [],
+    "lastReview": {},
+    "locationType": [
+        "Haunted Hotel"
+    ],
+    "moreInfoLink": "https://www.hilton.com/en/hotels/bhmcuqq-redmont-hotel-birmingham/?SEO_id=GMB-QQ-BHMCUQQ&y_source=1_Mjg1Njc0OC03MTUtbG9jYXRpb24uZ29vZ2xlX3dlYnNpdGVfb3ZlcnJpZGU%3D"
+},
+
+{
+    "id": 2,
+    "name": "Grand Union Hotel",
+    "address": {
+        "street": "1 Grand Union Square",
+        "city": "Fort Benton",
+        "state": "MT",
+        "country": "USA",
+        "zipCode": "59442"
+    },
+    "description": "On the banks of Fort Benton, lies Montana’s oldest operating hotel. With over 100 years of history between its walls, the Grand Union Hotel has earned quite a reputation. Many have claimed to have heard running children at night or the stomping of hooves from a horse. A horse whom a drunken cowboy tried to ride up the main staircase before the rider was shot dead by the hotel manager.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [],
+    "lastReview": {
+        "review": "Such a cool building! The town is small, so bring extra supplies!",
+        "rating": "5",
+        "user": "Spencer"
+    },
+    "locationType": [
+        "Haunted Hotel",
+        "Historical Landmark"
+    ],
+    "moreInfoLink": "www.grandunionhotel.com"
+},
+
+
+
+]

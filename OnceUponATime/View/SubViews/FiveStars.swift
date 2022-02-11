@@ -9,13 +9,22 @@ import SwiftUI
 
 struct FiveStars: View {
     var location: Location
+    
+    @State var avgRating = 0
     var body: some View {
-        HStack {
-            StarIcon(filled: location.avgRating > 0)
-            StarIcon(filled: location.avgRating > 1)
-            StarIcon(filled: location.avgRating > 2)
-            StarIcon(filled: location.avgRating > 3)
-            StarIcon(filled: location.avgRating > 4)
+        if let rating = location.review {
+            if rating.avgRating == "" {
+                self.avgRating = 0
+            } else {
+                self.avgRating = Int(rating.avgRating)!
+            }
+        }
+        return HStack(alignment: .top) {
+            StarIcon(filled: avgRating > 0)
+            StarIcon(filled: avgRating > 1)
+            StarIcon(filled: avgRating > 2)
+            StarIcon(filled: avgRating > 3)
+            StarIcon(filled: avgRating > 4)
         }
     }
 }

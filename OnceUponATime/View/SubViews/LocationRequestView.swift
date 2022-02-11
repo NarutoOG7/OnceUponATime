@@ -36,7 +36,7 @@ struct LocationRequestView: View {
                 
                 VStack {
                     Button(action: {
-                        LocationManager.instance.requestLocation()
+                        UserLocationManager.instance.requestLocation()
                         
                     }, label: {
                 Text("Allow location")

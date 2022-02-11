@@ -12,49 +12,72 @@ import Combine
 struct ExploreByMap: View {
     
     @ObservedObject var explorePageVM = ExploreByListVM.instance
-    @ObservedObject var locationManger = LocationManager.instance
+    @ObservedObject var locationStore = StoreManager.instance.locationStore
     @ObservedObject var selectedCardOption = SelectedExploreByMapFilter.instance
+    @State var selectedLocation = StoreManager.instance.locationStore.selectedLocation
     
     @State var isShowingLocationDetails = false
     
     var body: some View {
         ZStack {
         ZStack {
-                
-
             MapView()
-            ZStack {
-                VStack(spacing: 15) {
-                    HStack(spacing: 15) {
-                        SearchBar()
-                        sliderButton
-                        listButton
-                    }
-                    .padding()
-                    
-                    HStack {
-                        Spacer()
-                        VStack {
-                            currentLocationButton
-                            Spacer()
-                        }
-                        .offset(x: -15, y: -15)
-                    }
-                    Spacer()
-                }
-                .offset(y: 33)
-            }
+            VStack {
+                searchBar
+                searrchArea
+                Spacer()
 
+            }
+            .padding(.vertical, 35)
+        }
+        .frame(height: UIScreen.main.bounds.height)
+        
             SlideOverCard {
                 cardDetails
             }
-                
-        }
         }
     }
+    
+    var searchBar: some View {
+        HStack(spacing: 15) {
+            SearchBar()
+            sliderButton
+            listButton
+        }
+        .padding()
+    }
+    
+    var searrchArea: some View {
+        HStack {
+            Spacer()
+            Button(action: {
+                FirebaseManager.instance.getallDocs(center: UserLocationManager.instance.region.center, radius: UserLocationManager.instance.region.distanceMax()) { (location) -> (Void) in
+                    locationStore.onMapLocations.append(location)
+                    print(locationStore.onMapLocations.count)
+                }
+            }, label: {
+                Text("Search This Area")
+                    .background(
+                        Capsule()
+                            .fill(Color.white)
+                            .frame(width: 200, height: 39)
+                    )
+                    
+                    .foregroundColor(.blue)
+                
+            })
+            .padding(.horizontal)
+            .offset(x: -15)
+            Spacer()
+            
+            currentLocationButton
+        }
+        .offset(x: -15, y: -10)
+    }
+    
     var cardDetails: some View {
         VStack {
-            if let location = locationManger.selectedLocation {
+            if let location = locationStore.selectedLocation {
                 SubLocationDetailsScreen(location: location)
             } else {
                 onMapDetails
@@ -111,7 +134,7 @@ struct ExploreByMap: View {
     
     func setCurrentLocation() {
         withAnimation {
-            LocationManager.instance.setCurrentLocation()
+            UserLocationManager.instance.setCurrentLocation()
         }
     }
 }
@@ -121,6 +144,7 @@ struct ExploreByMap: View {
 struct ExploreByMapView_Previews: PreviewProvider {
     static var previews: some View {
         ExploreByMap()
+            .previewDevice("iPhone 12 Pro Max")
     }
 }
 

@@ -1,0 +1,602 @@
+
+
+
+[
+
+{
+    "id": 0,
+    "name": "Fort Condé Inn",
+    "address": {
+        "street": "165 St Emanuel St",
+        "city": "Mobile",
+        "state": "AL",
+        "country": "USA",
+        "zipCode": "36602"
+    },
+    "description": "Being built in 1836, it holds the title of second-oldest house in Mobile. Now a hotel, the Fort Condé Inn is one of the most haunted hotels in the state. Staying the night in this famous Alabama hotel might come with an overwhelming feeling of dread as some claim to have heard disembodied voices and clawing sounds on the floor.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/mobile-g3bea79042_640.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {
+        "avgRating" : "4",
+        "lastReview": "Has that 1800's vibe, ya know?",
+        "lastRating": "4",
+        "lastReviewUser": "Sarah"
+    },
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.fortcondeinn.com"
+},
+
+
+{
+    "id": 1,
+    "name": "Redmont Hotel",
+    "address": {
+        "street": "2101 5th Ave N",
+        "city": "Brimingham",
+        "state": "AL",
+        "country": "USA",
+        "zipCode": "35203"
+    },
+    "description": "In a time where private baths for every hotel was unusual, the new Redmont Hotel was ahead of its time. Being built in 1925, this hotel holds many secrets.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "https://www.hilton.com/en/hotels/bhmcuqq-redmont-hotel-birmingham/?SEO_id=GMB-QQ-BHMCUQQ&y_source=1_Mjg1Njc0OC03MTUtbG9jYXRpb24uZ29vZ2xlX3dlYnNpdGVfb3ZlcnJpZGU%3D"
+},
+
+
+{
+    "id": 2,
+    "name": "Hampton Inn & Suites (Greystone)",
+    "address": {
+        "street": "100 Commerce St",
+        "city": "Montgomery",
+        "state": "AL",
+        "country": "USA",
+        "zipCode": "36104"
+    },
+    "description": "This historic building was built in 1928. Once dubbed the Greystone, this hotel is known to have phantom phone calls, and the spirit of a woman on the fourth floor.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/commerce&greystone.jpg",
+        "gs://ghosttour-2b57b.appspot.com/montgomery.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.hilton.com/en/hotels/mgmdnhx-hampton-suites-montgomery-downtown/"
+},
+
+
+{
+    "id": 3,
+    "name": "Malaga Inn",
+    "address": {
+        "street": "359 Church St",
+        "city": "Mobile",
+        "state": "AL",
+        "country": "USA",
+        "zipCode": "36602"
+    },
+    "description": "Built during the Civil War, these twin townhouses were gifted to two sisters as wedding gifts. Today, rumors flow as this property now holds 39 rooms and serves as a hotel. A supposed woman in white paces the balcony of room 007 and mild poltergeist activity such as lights turning on and off are just piecies of a larger, scarier story.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/mobile-g3bea79042_640.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.malagainn.com"
+},
+
+
+{
+    "id": 4,
+    "name": "Westmark Fairbanks Hotel",
+    "address": {
+        "street": "813 Noble St",
+        "city": "Fairbanks",
+        "state": "AK",
+        "country": "USA",
+        "zipCode": "99701"
+    },
+    "description": "Give this haunted hotel a stay, but be weary of room 227. The spirit of a large man is said to appear before those that dare sleep in there. He may touch your shoulder, or budge your bed, so be warned about room 227.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/northernLights.jpg",
+        "gs://ghosttour-2b57b.appspot.com/FairbanksLake.jpg",
+        "gs://ghosttour-2b57b.appspot.com/FairbanksBridge.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.westmarkhotels.com/destinations/fairbanks-hotel/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMGxvGHhRS57rgYmTpuK7ZVwNn__LBykgfg8LuKYBxfyQhlI1uwS9MaAlP9EALw_wcB?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMGxvGHhRS57rgYmTpuK7ZVwNn__LBykgfg8LuKYBxfyQhlI1uwS9MaAlP9EALw_wcB"
+},
+
+
+
+{
+    "id": 5,
+    "name": "Hotel Captain Cook",
+    "address": {
+        "street": "939 W 5th Ave",
+        "city": "Anchorage",
+        "state": "AK",
+        "country": "USA",
+        "zipCode": "99501"
+    },
+    "description": "Having said to have committed suicide in a restroom, the ghost of woman in white haunts this iconic Alaskan hotel. She is known to open and close doors and flick lights on and off. Nested in Anchorage, this hotel is a must when you are in Alaska.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/anchorage.jpg",
+        "gs://ghosttour-2b57b.appspot.com/anchorage2.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.captaincook.com"
+},
+
+
+{
+    "id": 6,
+    "name": "Motherlode Lodge",
+    "address": {
+        "street": "14 Hatcher Pass Rd",
+        "city": "Palmer",
+        "state": "AK",
+        "country": "USA",
+        "zipCode": "99645"
+    },
+    "description": "Allegedly home to several spirits, the Motherlode lodge was an iconic hotel. Unfortunately, the lodge was ruined by fire in 2015. It had stood for over 70 years and showed off the most Alaskan decor out there; carvings, animal pelts, and even old-fashioned skis.",
+    "hoursOfOperation": "CLOSED",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/palmerLake.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.alaska.org/detail/motherlode-lodge"
+},
+
+
+{
+    "id": 7,
+    "name": "The White House Bed & Breakfast",
+    "address": {
+        "street": "475 8th Ave",
+        "city": "Skagway",
+        "state": "AK",
+        "country": "USA",
+        "zipCode": "99840"
+    },
+    "description": "With over 100 years of wear and tear, this once hospital is thriving as a hotel. It had been restored years ago after a devestating fire in the 1980's. Guests have reportedly seen children chatting with a lady at the foot of their beds. Perhaps due to the fact that the building was once a day-care, and that the owner occupied the building.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/skagway.jpg",
+        "gs://ghosttour-2b57b.appspot.com/skagway2.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.atthewhitehouse.com"
+},
+
+
+{
+    "id": 8,
+    "name": "Weatherford Hotel",
+    "address": {
+        "street": "23 N Leroux St",
+        "city": "Flagstaff",
+        "state": "AZ",
+        "country": "USA",
+        "zipCode": "86001"
+    },
+    "description": "The Weatherford lies in the heart of Flagstaff's historic downtown district where it holds over 120 years of history within its walls. One room was claimed to be so haunted that it was turned into a storage space. The fabled room 55 was said to be haunted by a woman who hung herself. Cold spots and equipment malfunction is common here.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/flagstaffRoad.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.weatherfordhotel.com"
+},
+
+
+{
+    "id": 9,
+    "name": "Hotel Monte Vista",
+    "address": {
+        "street": "100 N San Francisco St",
+        "city": "Flagstaff",
+        "state": "AZ",
+        "country": "USA",
+        "zipCode": "86001"
+    },
+    "description": "Infamous John Wayne once spotted ghost in this chilling building. Said to be home to multiple spirits, it is no wonder travelers leave with tales of their own. One woman is said to be rocking by the window in room 305, and the spirits of murdered prostitutes give 306 occupants a freight.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/hotelMonteVista2.jpg",
+        "gs://ghosttour-2b57b.appspot.com/hotelMonteVista.jpg",
+        "gs://ghosttour-2b57b.appspot.com/hotelMonteVista3.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.hotelmontevista.com"
+},
+
+
+{
+    "id": 10,
+    "name": "Gadsden Hotel",
+    "address": {
+        "street": "1046 G Ave",
+        "city": "Douglas",
+        "state": "AZ",
+        "country": "USA",
+        "zipCode": "85607"
+    },
+    "description": "A national treasure and over a century old, this historic hotel is quite the attraction. The hotel got its name from the Gadsden Purchase of 1853-54, a treaty between Mexico and the United States. The United States payed Mexico $10 million for nearly 30,00 square mile of what is now part of Arizona and New Mexico. Thus, allowing the southern transcontinental railroad to be built and the treaty was an attempt to resolve post-war conflicts; conflicts that lingered after the Mexican-American War. With an iconic name comes iconic stories. Room 333, of course, has many tales. From lights flashing, to the rocking of a chair, whatever is happening there is sure to give you quite the shiver!",
+    "hoursOfOperation": "7am - 9pm",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/douglasAZ.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.thegadsdenhotel.com"
+},
+
+
+{
+    "id": 11,
+    "name": "Jerome Grand Hotel",
+    "address": {
+        "street": "200 Hill St",
+        "city": "Jerome",
+        "state": "AZ",
+        "country": "USA",
+        "zipCode": "86331"
+    },
+    "description": "During the early 1900's Jerome was the fourth largest town in Arizona. Gaining popularity from Westward Expansion and the mining for gold and silver, it reached a population of over 15,000. This town, located on the steep hillside of Cleopatra Hill, gained the reputation of 'Wickedest Town in the West'. Jeromes hospital, the United Verde Hospital, was quite busy during its tenure. Having seen over 9,000 deaths, it had also survived the Great Depression, as well as a rebuild from a mine blast in 1926. But with gold and copper desposits dwindling, coupled with a high death rate, only 50 people remained when the building was finally abandoned in 1950. It lied full of equipment for 20 years until it was emptied. But it sat again for another 20 years before it was restored and turned into the Jerome Grand Hotel. Today, talks of ghosts are quite famous in Jerome. Hotel guests have talked of shadow figures and a friendly feline that may scratch at the doors, and there is some over lying sense of sadness and trauma. Some people have even been touched, when no one is around.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/jeromeAZ.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.jeromegrandhotel.net"
+},
+
+
+{
+    "id": 12,
+    "name": "Inn at Carnall Hall",
+    "address": {
+        "street": "465 Arkansas Ave",
+        "city": "Fayetteville",
+        "state": "AR",
+        "country": "USA",
+        "zipCode": "72701"
+    },
+    "description": "The first women's dorm at The University of Arkansas was built and opened in 1905. Named after English Professor Miss Ella Howlson Carnell, Carnell Hall was a doorm until 1966, where it became home to the Phi Gamma Delta Fraternity. By the early 80's, the structure was registered on the National Register for Historic Places, and in ten years, it was deemed unusable and need major repairs. With a large amount of money needed to repair the building, it was set to be demolished. However, with the help of the commnity and preservationists, the land was bought from the University of Arkansas and the building was restored. 6.3 million dollars later and the Inn at Carnall Hall was born in 2003.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/arkansas.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.innatcarnallhall.com"
+},
+
+
+{
+    "id": 13,
+    "name": "The Empress of Little Rock Bed & Breakfast",
+    "address": {
+        "street": "2120 S Louisiana St",
+        "city": "Little Rock",
+        "state": "AR",
+        "country": "USA",
+        "zipCode": "72206"
+    },
+    "description": "The ghost of a sharp-dressed man and a large woman in pink roam these halls. Some have claimed to see an old sea captain in their rooms. Phantom footstep parade the halls at night.",
+    "hoursOfOperation": "11am - 8pm",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/littleRockAR.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.theempress.com"
+},
+
+
+{
+    "id": 14,
+    "name": "Park Hotel",
+    "address": {
+        "street": "211 Fountain St",
+        "city": "Hot Springs",
+        "state": "AR",
+        "country": "USA",
+        "zipCode": "71901"
+    },
+    "description": "This hotel was built in the late 1920's and is of Spanish Revival influence. It is listed on the National Register of Historic Places and guests have reported of something touching them in the hallways, something unseen.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/arkansasRiver.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.hotsprings.org/places/lodging/park-hotel-of-hot-springs/"
+},
+
+
+{
+    "id": 15,
+    "name": "Basin Park Hotel",
+    "address": {
+        "street": "12 Spring St",
+        "city": "Eureka Springs",
+        "state": "AR",
+        "country": "USA",
+        "zipCode": "72632"
+    },
+    "description": "Eureka was quite popular in the 1800's. Having gained a reputation for its 'healing waters', Eureka Springs was the fourth largest city in Arkansas in 1881. In 1905, a hotel was forged in the mountainside of this bustling city. However, it was not the first to be built here. Another hotel, named the Perry House, stood in the same grounds. The Perry House burned in the first few years of the 1900's, killing those that were on the fourth floor. It is said that the ghosts of the victims lie on the third floor of the new Basin Park Hotel because the bottom floor is the lobby. Many rooms are known to be active at night.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/eurekaSprings.jpg"
+    ],
+    "offersGhostTours": true,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.basinpark.com"
+},
+
+
+{
+    "id": 16,
+    "name": "Hotel Union Square",
+    "address": {
+        "street": "114 Powell St",
+        "city": "San Francisco",
+        "state": "CA",
+        "country": "USA",
+        "zipCode": "94102"
+    },
+    "description": "Over 100 years ago, Hotel Union Square was erected for teh Pan Pacific Exposition. With notable haunted room 207 and other tales of tragic deaths, this hotel is a stay you won't forget.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/unionSquareSfCA.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.hotelunionsquare.com"
+},
+
+
+{
+    "id": 17,
+    "name": "Palomar Inn",
+    "address": {
+        "street": "28522 Old Town Front St",
+        "city": "Temecula",
+        "state": "CA",
+        "country": "USA",
+        "zipCode": "92590"
+    },
+    "description": "This historic landmark with only 10 rooms is quite the destination for tourists travelling to California's wine country. The hotel has an eerie vibe, for it was built in the 1920's. Many guests have had creepy encounters with something on the property.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/temecula.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "https://www.tripadvisor.com/ShowUserReviews-g33165-d3683446-r357989799-Palomar_Inn-Temecula_California.html"
+},
+
+
+{
+    "id": 18,
+    "name": "Delta King Riverboat Hotel",
+    "address": {
+        "street": "1000 Front St",
+        "city": "Sacramento",
+        "state": "CA",
+        "country": "USA",
+        "zipCode": "95814"
+    },
+    "description": "One of the more iconic stays in the state, this hotel is on a restored paddlewheel riverboat that dates back over 100 years. Once it was a floating hospital, now it is a wonderful stay for those looking to explore the city.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/sacramento.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.deltaking.com"
+},
+
+
+{
+    "id": 19,
+    "name": "The Hollywood Roosevelt",
+    "address": {
+        "street": "7000 Hollywood Blvd",
+        "city": "Los Angeles",
+        "state": "CA",
+        "country": "USA",
+        "zipCode": "90028"
+    },
+    "description": "Haunted by Marilyn Monroe, this prestigious hotel is one for the books! Sleep in room 928 for a possible visit from late actor Montgomery Cliff.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/hollywoodBLVD.jpg",
+        "gs://ghosttour-2b57b.appspot.com/hollywoodBLVD2.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.thehollywoodroosevelt.com"
+},
+
+
+{
+    "id": 20,
+    "name": "Goldminer Hotel",
+    "address": {
+        "street": "601 Klondike Ave",
+        "city": "Nederland",
+        "state": "CO",
+        "country": "USA",
+        "zipCode": "80466"
+    },
+    "description": "Built in 1897, this hotel has loads of history to show off. There have been reports of strange feelings and occurences here.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/colorado.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.goldminerhotel.com"
+},
+
+
+{
+    "id": 21,
+    "name": "Oxford Hotel",
+    "address": {
+        "street": "1600 17th St",
+        "city": "Denver",
+        "state": "CO",
+        "country": "USA",
+        "zipCode": "80202"
+    },
+    "description": "The Oxford Hotel is Denver's oldest boutique hotel. Having had a brutal murder suicide, the walls contain many secrets. Guests have complained of sheets flying off of the bed, and bartenders have reported of seeing and old, 1930's Postal Worker. One who seems to be trying to deliver Christmas gifts to Children in Central City",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/denver.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.theoxfordhotel.com"
+},
+
+
+{
+    "id": 22,
+    "name": "Hotel Colorado",
+    "address": {
+        "street": "526 Pine St",
+        "city": "Glenwood Springs",
+        "state": "CO",
+        "country": "USA",
+        "zipCode": "81601"
+    },
+    "description": "Weighed down by grief and misery, this once Navy hospital is a paranormal enthusiasts dream destination! This now hotel was built in 1893, but during WWII, it was converted into a Navy hospital. When soldiers would pass, their dead bodies were stored in the basement. Today, guests and staff have claimed to see weird things around the building, including ghostly soldiers.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/glenwood.jpg"
+    ],
+    "offersGhostTours": false,
+    "review": {},
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.hotelcolorado.com"
+},
+
+
+{
+    "id": 23,
+    "name": "Stanley Hotel",
+    "address": {
+        "street": "333 E Wonderview Ave",
+        "city": "Estes Park",
+        "state": "CO",
+        "country": "USA",
+        "zipCode": "80517"
+    },
+    "description": "This is where Stephen King got his inspiration for book 'The Shining'. Some claim to have seen ghosts in the hallways. Others have recounted incidents in the ball room and the basement below it.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [
+        "gs://ghosttour-2b57b.appspot.com/estes-parks-stanley-hotel-3893837_1920.jpg",
+        "gs://ghosttour-2b57b.appspot.com/IMG_0157.JPG"
+    ],
+    "offersGhostTours": true,
+    "review": {
+        "avgRating": "5",
+        "lastReview": "Such an awesome experience! The ghost tour was a blast, and I swear on my life that a ghost closed that door.",
+        "lastRating": "5",
+        "lastReviewUser": "Spencer"
+    },
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.stanleyhotel.com"
+},
+
+
+{
+    "id": 50,
+    "name": "Grand Union Hotel",
+    "address": {
+        "street": "1 Grand Union Square",
+        "city": "Fort Benton",
+        "state": "MT",
+        "country": "USA",
+        "zipCode": "59442"
+    },
+    "description": "On the banks of Fort Benton, lies Montana’s oldest operating hotel. With over 100 years of history between its walls, the Grand Union Hotel has earned quite a reputation. Many have claimed to have heard running children at night or the stomping of hooves from a horse. A horse whom a drunken cowboy tried to ride up the main staircase before the rider was shot dead by the hotel manager.",
+    "hoursOfOperation": "24/7",
+    "imageURLs": [],
+    "offersGhostTours": false,
+    "review": {
+        "avgRating": "5",
+        "lastReview": "Such a cool building! The town is small, so bring extra supplies!",
+        "lastRating": "5",
+        "lastReviewUser": "Spencer"
+    },
+    "likes": 0,
+    "locationType": "Haunted Hotel",
+    "moreInfoLink": "www.grandunionhotel.com"
+},
+
+
+]

@@ -10,7 +10,8 @@ import SwiftUI
 //MARK: - Regular Location Cell
 
 struct LocationCell: View {
-    let location: Location
+    @State var location: Location
+    
     var body: some View {
         HStack {
             Spacer(minLength: 15)
@@ -21,11 +22,22 @@ struct LocationCell: View {
                     .fill(Color.white)
                     .shadow(color: Color(#colorLiteral(red: 0.4582606282, green: 0.4582606282, blue: 0.4582606282, alpha: 0.4873715753)), radius: 10)
                     .frame(width: 320, height: 270)
+//                    .onAppear {
+//                        locationStore.getImage(from: location.imageURLs) { (image) -> (Void) in
+//                            location.addImages(uiImage: UIImage(cgImage: image))
+//                        }
+//                        exploreByListVM.getImage(for: location, from: location.imageURLs)
+//                    }
                 VStack {
-                    if let firstImage = location.images[0] {
-                        firstImage
+//                    if let image = location.images[0] {
+//                        firstImage
+//                            .resizable()
+//                    }
+                    if let mainImage = location.baseImage {
+                       mainImage
                             .resizable()
                     }
+
                     Spacer(minLength: 12)
                     
                     VStack(alignment: .leading) {
@@ -36,13 +48,13 @@ struct LocationCell: View {
                         
                         Spacer(minLength: 5)
                         
-                        Text(location.address.shortAddress())
+                        Text(location.address.streetCity())
                             .font(.subheadline)
                             .fontWeight(.light)
                         
                         Spacer(minLength: 10)
                         
-                        FiveStars(location: location)
+//                        FiveStars(location: location)
                         
                         Spacer()
                         
@@ -72,19 +84,19 @@ struct SmallLocationCell: View {
     var location: Location
     var body: some View {
         HStack {
-            if let firstImage = location.images[0] {
-                firstImage
-                    .resizable()
-                    .aspectRatio(1, contentMode: .fit)
-                    .frame(maxWidth: 80)
-                    .cornerRadius(40)
-            }
+//            if let firstImage = location.images[0] {
+//                firstImage
+//                    .resizable()
+//                    .aspectRatio(1, contentMode: .fit)
+//                    .frame(maxWidth: 80)
+//                    .cornerRadius(40)
+//            }
             VStack(alignment: .leading, spacing: 3) {
                 VStack(alignment: .leading, spacing: 6) {
                     Text(location.name)
                         .font(.title2)
                         .fontWeight(.bold)
-                    Text(location.address.shortAddress())
+                    Text(location.address.streetCity())
                 }
                 HStack {
                     Spacer()
@@ -111,7 +123,7 @@ struct SmallLocationCell: View {
 
 struct AllLocationCells: View {
     var body: some View {
-        List(LocationStore().locations) { location in
+        List(StoreManager.instance.locationStore.locations) { location in
             SmallLocationCell(location: location)
         }
     }
